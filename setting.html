@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link rel="stylesheet" href="styles/style-setting.css">
+</head>
+<body>
+<div class="setting" style="display: flex">
+  
+    <h2>Setting Game</h2>
+    <div class="custom-select-container">
+        <select class="custom-select" id="optionSelect">
+            <option  value="2" selected>2 Player</option>
+            <option value="3">3 Player</option>
+            <option value="4">4 Player</option>
+            <option value="5">5 Player</option>
+        </select>
+    </div>
+    <form id="dataForm">
+      <div class="player" style="display: none">
+        <b><i>-------------------Player 1---------------------</i></b> <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name Player" ><br>
+        <label for="name">Score:</label>
+        <input type="text" id="score" value="0" readonly>
+      </div>
+      
+        <div class="player" style="display: none">
+        <b><i>-------------------Player 2---------------------</i></b> <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name Player"><br>
+        <label for="name">Score:</label>
+        <input type="text" id="score" value="0" readonly>
+      </div>
+
+      <div class="player" style="display: none">
+        <b><i>-------------------Player 3---------------------</i></b> <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name Player"><br>
+        <label for="name">Score:</label>
+        <input type="text" id="score" value="0" readonly>
+      </div>
+
+      <div class="player" style="display: none">
+        <b><i>-------------------Player 4---------------------</i></b> <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name Player"><br>
+        <label for="name">Score:</label>
+        <input type="text" id="score" value="0" readonly>
+      </div>
+
+      <div class="player" style="display: none">
+        <b><i>-------------------Player 5---------------------</i></b> <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Name Player"><br>
+        <label for="name">Score:</label>
+        <input type="text" id="score" value="0" readonly>
+      </div>
+      
+      
+      <button type="submit" id="submit">Save Setting</button>
+      
+      
+    </form>
+    <button type="submit" >Reset Point</button>
+
+</div>
+</body>
+  <script src="content/setting.js"></script>
+</html>
